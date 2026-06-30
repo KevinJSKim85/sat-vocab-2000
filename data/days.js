@@ -431,7 +431,7 @@ window.DAYS = [
         "w": "reproach",
         "pos": "v.",
         "ipa": "/rɪˈproʊtʃ/",
-        "en": "to express disapproval to",
+        "en": "to scold or find fault with",
         "ko": "책망하다",
         "ex": "She reproached him for forgetting the meeting."
       },
@@ -463,7 +463,7 @@ window.DAYS = [
         "w": "reprove",
         "pos": "v.",
         "ipa": "/rɪˈpruːv/",
-        "en": "to express disapproval of",
+        "en": "to rebuke gently but firmly",
         "ko": "책망하다",
         "ex": "Her glance was enough to reprove the children."
       },
@@ -607,7 +607,7 @@ window.DAYS = [
         "w": "deprecate",
         "pos": "v.",
         "ipa": "/ˈdɛprɪkeɪt/",
-        "en": "to express disapproval of",
+        "en": "to belittle or disparage",
         "ko": "헐뜯다, 반대하다",
         "ex": "Critics deprecate the sequel as needless."
       },
@@ -640,7 +640,7 @@ window.DAYS = [
         "pos": "v.",
         "ipa": "/ɪmˈpjuːn/",
         "en": "to attack as false or wrong",
-        "ko": "이의를 제기하다",
+        "ko": "공박하다, 의문을 제기하다",
         "ex": "No one dared impugn her integrity."
       },
       {
@@ -2865,7 +2865,7 @@ window.DAYS = [
         "w": "laconic",
         "pos": "adj.",
         "ipa": "/ləˈkɑnɪk/",
-        "en": "using very few words",
+        "en": "terse to the point of curtness",
         "ko": "말수가 적은",
         "ex": "The laconic ranger answered every question with a single nod or word."
       },
@@ -3249,7 +3249,7 @@ window.DAYS = [
         "w": "laconically",
         "pos": "adv.",
         "ipa": "/ləˈkɑnɪkli/",
-        "en": "using very few words",
+        "en": "in a terse, sparing manner",
         "ko": "간결하게",
         "ex": "\"We won,\" he said laconically, and offered nothing more."
       }
@@ -3424,9 +3424,9 @@ window.DAYS = [
         "w": "untoward",
         "pos": "adj.",
         "ipa": "/ʌnˈtɔrd/",
-        "en": "perverse and difficult to manage",
-        "ko": "다루기 힘든",
-        "ex": "His untoward stubbornness turned a simple favor into a standoff."
+        "en": "unexpected and inappropriate; unfavorable",
+        "ko": "뜻밖의, 부적절한",
+        "ex": "The inquiry found nothing untoward in the committee's accounts."
       },
       {
         "w": "perverse",
@@ -3716,12 +3716,12 @@ window.DAYS = [
         "ex": "The supine council rubber-stamped the governor's every decree."
       },
       {
-        "w": "obsequent",
+        "w": "conformable",
         "pos": "adj.",
-        "ipa": "/ˈɑbsɪkwənt/",
-        "en": "dutifully obedient and yielding",
-        "ko": "순종적인",
-        "ex": "The obsequent clerk carried out orders he privately thought unwise."
+        "ipa": "/kənˈfɔːrməbl/",
+        "en": "disposed to comply; readily submissive",
+        "ko": "순응하는, 고분고분한",
+        "ex": "A conformable junior, he adopted every rule without a murmur."
       },
       {
         "w": "obedient",
@@ -4917,7 +4917,7 @@ window.DAYS = [
         "pos": "adj.",
         "ipa": "/luːˈɡuːbriəs/",
         "en": "mournful, often exaggeratedly so",
-        "ko": "애처로운",
+        "ko": "과장되게 애처로운, 음울한",
         "ex": "The lugubrious dirge echoed through the dim chapel."
       },
       {
@@ -5467,7 +5467,7 @@ window.DAYS = [
         "w": "transport",
         "pos": "n.",
         "ipa": "/ˈtrænspɔːrt/",
-        "en": "an overwhelming rush of emotion",
+        "en": "an overwhelming rush of joyful emotion; rapture",
         "ko": "황홀",
         "ex": "In a transport of delight, he embraced every stranger nearby."
       },
@@ -6241,7 +6241,7 @@ window.DAYS = [
         "w": "closefisted",
         "pos": "adj.",
         "ipa": "/ˌkloʊsˈfɪs.tɪd/",
-        "en": "mean with money; stingy",
+        "en": "unwilling to spend or give money",
         "ko": "인색한",
         "ex": "The closefisted heir donated nothing despite his vast fortune."
       },
@@ -6473,7 +6473,7 @@ window.DAYS = [
         "w": "hardfisted",
         "pos": "adj.",
         "ipa": "/ˌhɑːrdˈfɪs.tɪd/",
-        "en": "mean and stingy with money",
+        "en": "harshly ungenerous and grasping",
         "ko": "인색한",
         "ex": "His hardfisted refusal to lend even a coin cost him every friend."
       },
@@ -6672,7 +6672,7 @@ window.DAYS = [
         "w": "mettle",
         "pos": "n.",
         "ipa": "/ˈmet.əl/",
-        "en": "courage and strength of character",
+        "en": "spirited resilience under pressure",
         "ko": "기개·근성",
         "ex": "The grueling climb truly tested their mettle."
       },
@@ -6888,7 +6888,7 @@ window.DAYS = [
         "w": "backbone",
         "pos": "n.",
         "ipa": "/ˈbæk.boʊn/",
-        "en": "strength of character; courage",
+        "en": "firm resolve to stand firm",
         "ko": "기개·줏대",
         "ex": "She had the backbone to stand up to her intimidating boss."
       },
@@ -6927,7 +6927,7 @@ window.DAYS = [
         "w": "pusillanimous",
         "pos": "adj.",
         "ipa": "/ˌpjuː.sɪˈlæn.ɪ.məs/",
-        "en": "timid and lacking courage",
+        "en": "craven and spineless",
         "ko": "겁 많은·소심한",
         "ex": "His pusillanimous retreat left his allies to face the enemy alone."
       },
@@ -7007,7 +7007,7 @@ window.DAYS = [
         "w": "faint-hearted",
         "pos": "adj.",
         "ipa": "/ˌfeɪntˈhɑːr.tɪd/",
-        "en": "lacking courage; timid",
+        "en": "easily discouraged; lacking nerve",
         "ko": "마음이 약한",
         "ex": "The climb was not for the faint-hearted."
       },
@@ -7031,7 +7031,7 @@ window.DAYS = [
         "w": "pigeon-hearted",
         "pos": "adj.",
         "ipa": "/ˌpɪdʒ.ɪnˈhɑːr.tɪd/",
-        "en": "timid and cowardly",
+        "en": "easily frightened; meek",
         "ko": "겁 많은",
         "ex": "His pigeon-hearted excuses fooled no one."
       },
@@ -7295,7 +7295,7 @@ window.DAYS = [
         "w": "chicken-livered",
         "pos": "adj.",
         "ipa": "/ˌtʃɪk.ɪnˈlɪv.ərd/",
-        "en": "timid and cowardly",
+        "en": "cowardly and faint of spirit",
         "ko": "겁 많은",
         "ex": "Don't be so chicken-livered; just ask for what you deserve."
       },
@@ -7614,9 +7614,9 @@ window.DAYS = [
         "w": "adumbrate",
         "pos": "v.",
         "ipa": "/ˈædəmbreɪt/",
-        "en": "to outline or foreshadow clearly",
+        "en": "to outline or foreshadow faintly; give a sketchy indication of",
         "ko": "윤곽을 그리다",
-        "ex": "The preface adumbrates the arguments that follow."
+        "ex": "The preface only adumbrates the arguments, leaving the details for later."
       },
       {
         "w": "delineate",
@@ -7821,7 +7821,7 @@ window.DAYS = [
         "w": "impenetrable",
         "pos": "adj.",
         "ipa": "/ɪmˈpɛnɪtrəbl/",
-        "en": "impossible to understand",
+        "en": "impossible to penetrate or fathom",
         "ko": "이해할 수 없는",
         "ex": "The contract's jargon was impenetrable to outsiders."
       },
@@ -8109,7 +8109,7 @@ window.DAYS = [
         "w": "unintelligible",
         "pos": "adj.",
         "ipa": "/ˌʌnɪnˈtɛlɪdʒəbl/",
-        "en": "impossible to understand",
+        "en": "impossible to comprehend; garbled",
         "ko": "이해할 수 없는",
         "ex": "The drunken message was completely unintelligible."
       },
@@ -8571,7 +8571,7 @@ window.DAYS = [
         "w": "torpid",
         "pos": "adj.",
         "ipa": "/ˈtɔːrpɪd/",
-        "en": "sluggish; lacking energy",
+        "en": "dull and slow from inertia",
         "ko": "무기력한",
         "ex": "The heat left everyone torpid by mid-afternoon."
       },
@@ -8603,7 +8603,7 @@ window.DAYS = [
         "w": "lethargic",
         "pos": "adj.",
         "ipa": "/ləˈθɑːrdʒɪk/",
-        "en": "sluggish and lacking energy",
+        "en": "drowsy and devoid of vigor",
         "ko": "무기력한",
         "ex": "A heavy lunch left him lethargic for the meeting."
       },
@@ -8715,7 +8715,7 @@ window.DAYS = [
         "w": "indolently",
         "pos": "adv.",
         "ipa": "/ˈɪndələntli/",
-        "en": "in a lazy, idle manner",
+        "en": "in a habitually lazy way",
         "ko": "게으르게",
         "ex": "He lounged indolently while the others packed."
       },
@@ -8731,7 +8731,7 @@ window.DAYS = [
         "w": "slothfully",
         "pos": "adv.",
         "ipa": "/ˈsloʊθfli/",
-        "en": "in a lazy, idle manner",
+        "en": "with sluggish reluctance to move",
         "ko": "나태하게",
         "ex": "The afternoon passed slothfully, hour by empty hour."
       },
@@ -9282,7 +9282,7 @@ window.DAYS = [
         "w": "surcharge",
         "pos": "n.",
         "ipa": "/ˈsɜːrtʃɑːrdʒ/",
-        "en": "an excessive additional load or fee",
+        "en": "an additional charge or load added to the usual amount",
         "ko": "추가 부담",
         "ex": "An unexpected surcharge inflated the final bill."
       },
@@ -9377,7 +9377,7 @@ window.DAYS = [
         "w": "dearth",
         "pos": "n.",
         "ipa": "/dɜːrθ/",
-        "en": "a scarcity or lack of something",
+        "en": "an inadequate supply; shortfall",
         "ko": "부족",
         "ex": "There was a dearth of qualified applicants for the post."
       },
@@ -9481,7 +9481,7 @@ window.DAYS = [
         "w": "want",
         "pos": "n.",
         "ipa": "/wɑːnt/",
-        "en": "lack or scarcity of something",
+        "en": "a pressing need born of deprivation",
         "ko": "결핍",
         "ex": "The harvest failed, and the village knew real want that winter."
       },
@@ -9674,7 +9674,7 @@ window.DAYS = [
         "pos": "adj.",
         "ipa": "/ɔːˈstɪr/",
         "en": "severely plain; without luxury",
-        "ko": "엄격한",
+        "ko": "검소한, 소박한",
         "ex": "Postwar life was austere, with rationing for years."
       },
       {
@@ -10149,12 +10149,12 @@ window.DAYS = [
         "ex": "Years of betrayal left him bitter and misanthropic."
       },
       {
-        "w": "enmityridden",
+        "w": "antipathetic",
         "pos": "adj.",
-        "ipa": "/ˈɛnmɪtiˌrɪdən/",
-        "en": "consumed by mutual hostility",
-        "ko": "적의로 가득 찬",
-        "ex": "The two enmity-ridden clans had feuded for generations."
+        "ipa": "/ˌæntɪpəˈθetɪk/",
+        "en": "showing deep-seated hostility or aversion",
+        "ko": "강한 반감을 가진",
+        "ex": "The two factions were so antipathetic that no compromise survived a single meeting."
       },
       {
         "w": "odium",
@@ -10456,7 +10456,7 @@ window.DAYS = [
         "pos": "adj.",
         "ipa": "/kəmˈpleɪsənt/",
         "en": "eager to please; obliging",
-        "ko": "공손한",
+        "ko": "고분고분한, 순응적인",
         "ex": "The complaisant clerk fulfilled every request."
       },
       {
@@ -10759,7 +10759,7 @@ window.DAYS = [
         "pos": "adj.",
         "ipa": "/ʃruːd/",
         "en": "sharp in practical judgment",
-        "ko": "약삭빠른",
+        "ko": "명민한, 기민한",
         "ex": "A shrewd reader of markets, he sold before the dip."
       },
       {
@@ -11005,7 +11005,7 @@ window.DAYS = [
         "w": "asinine",
         "pos": "adj.",
         "ipa": "/ˈæsɪnaɪn/",
-        "en": "extremely stupid or foolish",
+        "en": "absurdly silly and senseless",
         "ko": "멍청한",
         "ex": "The plan was so asinine that no one defended it."
       },
@@ -11277,8 +11277,8 @@ window.DAYS = [
         "w": "crass",
         "pos": "adj.",
         "ipa": "/kræs/",
-        "en": "grossly stupid and insensitive",
-        "ko": "우둔한",
+        "en": "showing coarse insensitivity or lack of refinement",
+        "ko": "천박한, 무신경한",
         "ex": "His crass remark betrayed total ignorance."
       },
       {
@@ -11357,7 +11357,7 @@ window.DAYS = [
         "w": "moronic",
         "pos": "adj.",
         "ipa": "/məˈrɒnɪk/",
-        "en": "extremely foolish or stupid",
+        "en": "dim-witted and brainless",
         "ko": "바보 같은",
         "ex": "It was moronic to taunt the larger dog."
       },
@@ -11793,12 +11793,12 @@ window.DAYS = [
         "ex": "Her methodicalness turned disorder into routine."
       },
       {
-        "w": "syntactic",
+        "w": "taxonomic",
         "pos": "adj.",
-        "ipa": "/sɪnˈtæktɪk/",
-        "en": "relating to orderly arrangement",
-        "ko": "구조적인, 배열의",
-        "ex": "The filing system followed a strict syntactic logic."
+        "ipa": "/ˌtæksəˈnɒmɪk/",
+        "en": "relating to orderly classification into ranked categories",
+        "ko": "분류학적인, 체계적 분류의",
+        "ex": "The archive imposed a strict taxonomic order, nesting every file within labeled tiers."
       }
     ]
   },
@@ -12123,7 +12123,7 @@ window.DAYS = [
         "w": "discompose",
         "pos": "v.",
         "ipa": "/ˌdɪskəmˈpoʊz/",
-        "en": "to disturb the calm or order of",
+        "en": "to ruffle the composure of",
         "ko": "동요시키다",
         "ex": "Nothing could discompose her steady manner."
       },
@@ -12139,7 +12139,7 @@ window.DAYS = [
         "w": "unsettle",
         "pos": "v.",
         "ipa": "/ʌnˈsetl/",
-        "en": "to disturb the order or calm of",
+        "en": "to throw into anxious disorder",
         "ko": "불안하게 하다",
         "ex": "The verdict unsettled the entire community."
       },
@@ -12966,12 +12966,12 @@ window.DAYS = [
         "ex": "The dilapidated pier was closed to the public."
       },
       {
-        "w": "effemeral",
+        "w": "corruptible",
         "pos": "adj.",
-        "ipa": "/ɪˈfɛmərəl/",
-        "en": "short-lived; lasting one day",
-        "ko": "하루살이 같은",
-        "ex": "The mayfly lives an effemeral adult life of a single day."
+        "ipa": "/kəˈrʌptəbl/",
+        "en": "liable to decay, spoil, or be debased over time",
+        "ko": "부패하기 쉬운",
+        "ex": "Paper records are corruptible, fading and crumbling within a few damp decades."
       },
       {
         "w": "passing",
@@ -13048,7 +13048,7 @@ window.DAYS = [
         "w": "covert",
         "pos": "adj.",
         "ipa": "/ˈkoʊvɜːrt/",
-        "en": "concealed; not openly shown",
+        "en": "kept secret; clandestine",
         "ko": "은밀한",
         "ex": "The agency ran a covert operation overseas."
       },
@@ -13424,7 +13424,7 @@ window.DAYS = [
         "w": "veiled",
         "pos": "adj.",
         "ipa": "/veɪld/",
-        "en": "concealed; not openly shown",
+        "en": "disguised behind an outward show",
         "ko": "감춰진, 은폐된",
         "ex": "His apology carried a veiled threat."
       }
@@ -13895,7 +13895,7 @@ window.DAYS = [
         "pos": "v.",
         "ipa": "/ˈærəɡeɪt/",
         "en": "to claim presumptuously without right",
-        "ko": "사칭하다",
+        "ko": "부당하게 차지하다",
         "ex": "The committee arrogated to itself powers never granted by the charter."
       },
       {
@@ -14227,12 +14227,12 @@ window.DAYS = [
         "ex": "His fastuous airs grated on everyone at the reception."
       },
       {
-        "w": "supercilial",
+        "w": "toplofty",
         "pos": "adj.",
-        "ipa": "/ˌsuːpərˈsɪliəl/",
-        "en": "disdainfully superior in manner",
-        "ko": "거드름 피우는",
-        "ex": "She dismissed the idea with a supercilial wave of the hand."
+        "ipa": "/ˈtɒpˌlɒfti/",
+        "en": "haughtily superior and condescending",
+        "ko": "거만한, 도도한",
+        "ex": "Her toplofty manner made even a simple greeting feel like a favor granted."
       },
       {
         "w": "morgue",
@@ -14797,7 +14797,7 @@ window.DAYS = [
         "pos": "n.",
         "ipa": "/ˈkɒntrətɒn/",
         "en": "an awkward clash or mishap",
-        "ko": "언쟁",
+        "ko": "뜻밖의 낭패, 난처한 사건",
         "ex": "A minor contretemps over precedence delayed the banquet."
       },
       {
@@ -15123,7 +15123,7 @@ window.DAYS = [
         "w": "tranquil",
         "pos": "adj.",
         "ipa": "/ˈtræŋkwɪl/",
-        "en": "calm, peaceful, and untroubled",
+        "en": "placid and free from agitation",
         "ko": "고요한",
         "ex": "A tranquil silence settled over the valley."
       },
@@ -15131,7 +15131,7 @@ window.DAYS = [
         "w": "serene",
         "pos": "adj.",
         "ipa": "/səˈriːn/",
-        "en": "calm, peaceful, and untroubled",
+        "en": "unclouded and composed in spirit",
         "ko": "평온한",
         "ex": "She faced the verdict with serene composure."
       },
@@ -15176,12 +15176,12 @@ window.DAYS = [
         "ex": "The dispute went to conciliation rather than court."
       },
       {
-        "w": "rapprocher",
-        "pos": "v.",
-        "ipa": "/ræprɒˈʃeɪ/",
-        "en": "to bring into closer relations",
-        "ko": "가까워지게 하다",
-        "ex": "Quiet diplomacy began to rapprocher the estranged states."
+        "w": "ceasefire",
+        "pos": "n.",
+        "ipa": "/ˈsiːsˌfaɪər/",
+        "en": "an agreed suspension of hostilities",
+        "ko": "휴전, 정전",
+        "ex": "A fragile ceasefire finally silenced the guns along the contested border."
       },
       {
         "w": "defuse",
@@ -15243,7 +15243,7 @@ window.DAYS = [
         "w": "quiescent",
         "pos": "adj.",
         "ipa": "/kwiˈesənt/",
-        "en": "in a state of quiet repose",
+        "en": "temporarily inactive; dormant",
         "ko": "잠잠한",
         "ex": "The long-quiescent feud quietly faded away."
       },
@@ -15384,12 +15384,12 @@ window.DAYS = [
         "ex": "Their reconcilement ended a feud of twenty years."
       },
       {
-        "w": "pacationism",
+        "w": "pacifism",
         "pos": "n.",
-        "ipa": "/pəˈkeɪʃənɪzəm/",
-        "en": "a policy of seeking peace",
-        "ko": "평화 추구 정책",
-        "ex": "Critics dismissed his pacationism as naive surrender."
+        "ipa": "/ˈpæsɪfɪzəm/",
+        "en": "opposition to war; advocacy of peaceful settlement",
+        "ko": "평화주의",
+        "ex": "Critics dismissed his pacifism as naive, but he never wavered from it."
       },
       {
         "w": "mansuetude",
@@ -15435,7 +15435,7 @@ window.DAYS = [
         "w": "quiescence",
         "pos": "n.",
         "ipa": "/kwiˈɛsəns/",
-        "en": "a state of quiet repose",
+        "en": "dormant inactivity; stillness",
         "ko": "정적, 평온",
         "ex": "After the storm a deep quiescence settled over the valley."
       },
@@ -15735,12 +15735,12 @@ window.DAYS = [
         "ex": "The clinic offered an experimental therapy still under review."
       },
       {
-        "w": "avant",
+        "w": "visionary",
         "pos": "adj.",
-        "ipa": "/ˈævɒ̃/",
-        "en": "experimental; ahead of the mainstream",
-        "ko": "전위의",
-        "ex": "The avant collective staged performances in abandoned factories."
+        "ipa": "/ˈvɪʒəneri/",
+        "en": "marked by original, forward-looking imagination",
+        "ko": "선견지명이 있는, 통찰력 있는",
+        "ex": "Her visionary designs anticipated technologies the industry would not build for years."
       },
       {
         "w": "originative",
@@ -15799,12 +15799,12 @@ window.DAYS = [
         "ex": "The upstart undercut the giants and stole their loyal customers."
       },
       {
-        "w": "avantist",
+        "w": "trailblazer",
         "pos": "n.",
-        "ipa": "/ˈævɒ̃tɪst/",
-        "en": "a proponent of forward, experimental ideas",
-        "ko": "전위론자",
-        "ex": "The avantist crowd dismissed tradition as mere nostalgia."
+        "ipa": "/ˈtreɪlˌbleɪzər/",
+        "en": "a pioneer who opens a new path for others",
+        "ko": "개척자, 선구자",
+        "ex": "A trailblazer in gene editing, she charted methods that whole labs later followed."
       },
       {
         "w": "trendsetting",
