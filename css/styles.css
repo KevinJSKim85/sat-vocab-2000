@@ -580,6 +580,13 @@ a:hover { text-decoration: underline; }
   margin-top: 8px;
 }
 .quiz-nav .btn { flex: 1; }
+.quiz-skip-warn {
+  margin: 8px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #c0392b;
+  text-align: center;
+}
 
 /* score / review */
 .score-box {

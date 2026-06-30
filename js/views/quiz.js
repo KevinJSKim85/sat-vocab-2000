@@ -39,6 +39,8 @@
     var body = el("div");
     root.appendChild(body);
 
+    var skipWarning = false;
+
     function drawQuestion() {
       body.innerHTML = "";
       var q = questions[pos];
@@ -56,7 +58,7 @@
         optionsBox.appendChild(el("button", {
           class: "option" + (selected ? " selected" : ""),
           type: "button",
-          onclick: function () { answers[pos] = i; drawQuestion(); }
+          onclick: function () { answers[pos] = i; skipWarning = false; drawQuestion(); }
         }, [
           el("span", { class: "marker", text: String.fromCharCode(65 + i) }),
           el("span", { text: opt.text })
@@ -74,18 +76,34 @@
       var nav = el("div", { class: "quiz-nav" });
       nav.appendChild(el("button", {
         class: "btn", type: "button", disabled: pos === 0 ? "disabled" : false,
-        onclick: function () { if (pos > 0) { pos--; drawQuestion(); } }
+        onclick: function () { if (pos > 0) { skipWarning = false; pos--; drawQuestion(); } }
       }, ["← Prev"]));
 
       if (pos < questions.length - 1) {
-        nav.appendChild(el("button", { class: "btn", type: "button", onclick: function () { pos++; drawQuestion(); } }, ["Next →"]));
+        nav.appendChild(el("button", {
+          class: "btn", type: "button",
+          onclick: function () {
+            if (answers[pos] === null) { skipWarning = true; drawQuestion(); return; }
+            skipWarning = false; pos++; drawQuestion();
+          }
+        }, ["Next →"]));
       } else {
         nav.appendChild(el("button", {
           class: "btn btn-primary", type: "button",
-          onclick: function () { trySubmit(); }
+          onclick: function () {
+            if (answers[pos] === null) { skipWarning = true; drawQuestion(); return; }
+            skipWarning = false; trySubmit();
+          }
         }, ["Submit"]));
       }
       body.appendChild(nav);
+
+      if (skipWarning) {
+        body.appendChild(el("p", {
+          class: "quiz-skip-warn",
+          text: "Please choose an answer — you can’t skip a question."
+        }));
+      }
 
       var answered = answers.filter(function (a) { return a !== null; }).length;
       body.appendChild(el("p", { class: "note center", text: answered + " of " + questions.length + " answered" }));
