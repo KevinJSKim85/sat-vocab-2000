@@ -2,6 +2,7 @@ node_modules/
 .omc/
 .verify/
 .playwright-mcp/
+audit/
 data/_candidates/
 /tmp
 .DS_Store
