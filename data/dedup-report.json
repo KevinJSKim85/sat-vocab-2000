@@ -1,0 +1,476 @@
+{
+  "generated": "2026-06-30T11:41:53.317Z",
+  "total_days": 40,
+  "per_day_count": {
+    "1": 50,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50,
+    "11": 50,
+    "12": 50,
+    "13": 50,
+    "14": 50,
+    "15": 50,
+    "16": 50,
+    "17": 50,
+    "18": 50,
+    "19": 50,
+    "20": 50,
+    "21": 50,
+    "22": 50,
+    "23": 50,
+    "24": 50,
+    "25": 50,
+    "26": 50,
+    "27": 50,
+    "28": 50,
+    "29": 50,
+    "30": 50,
+    "31": 50,
+    "32": 50,
+    "33": 50,
+    "34": 50,
+    "35": 50,
+    "36": 50,
+    "37": 50,
+    "38": 50,
+    "39": 50,
+    "40": 50
+  },
+  "total_words": 2000,
+  "total_unique_keys": 2000,
+  "cross_day_collisions_dropped": 188,
+  "backfill_words_added": 104,
+  "backfill_words": [
+    {
+      "day": 21,
+      "w": "operose"
+    },
+    {
+      "day": 21,
+      "w": "indefatigability"
+    },
+    {
+      "day": 21,
+      "w": "strenuous"
+    },
+    {
+      "day": 23,
+      "w": "superabundant"
+    },
+    {
+      "day": 25,
+      "w": "detestation"
+    },
+    {
+      "day": 25,
+      "w": "vituperative"
+    },
+    {
+      "day": 25,
+      "w": "contumelious"
+    },
+    {
+      "day": 25,
+      "w": "acerbic"
+    },
+    {
+      "day": 25,
+      "w": "malignant"
+    },
+    {
+      "day": 25,
+      "w": "spiteful"
+    },
+    {
+      "day": 25,
+      "w": "viperous"
+    },
+    {
+      "day": 25,
+      "w": "misanthropic"
+    },
+    {
+      "day": 25,
+      "w": "enmityridden"
+    },
+    {
+      "day": 25,
+      "w": "odium"
+    },
+    {
+      "day": 25,
+      "w": "execration"
+    },
+    {
+      "day": 26,
+      "w": "concinnity"
+    },
+    {
+      "day": 26,
+      "w": "clubbable"
+    },
+    {
+      "day": 27,
+      "w": "percipience"
+    },
+    {
+      "day": 27,
+      "w": "sophic"
+    },
+    {
+      "day": 27,
+      "w": "sagaciousness"
+    },
+    {
+      "day": 27,
+      "w": "insightfulness"
+    },
+    {
+      "day": 29,
+      "w": "syntactic"
+    },
+    {
+      "day": 31,
+      "w": "perduration"
+    },
+    {
+      "day": 33,
+      "w": "incognizable"
+    },
+    {
+      "day": 33,
+      "w": "crypsis"
+    },
+    {
+      "day": 33,
+      "w": "abscond"
+    },
+    {
+      "day": 33,
+      "w": "obnubilate"
+    },
+    {
+      "day": 33,
+      "w": "secretiveness"
+    },
+    {
+      "day": 33,
+      "w": "clandestineness"
+    },
+    {
+      "day": 33,
+      "w": "huggermuggery"
+    },
+    {
+      "day": 33,
+      "w": "sequestered"
+    },
+    {
+      "day": 33,
+      "w": "veiled"
+    },
+    {
+      "day": 34,
+      "w": "candidness"
+    },
+    {
+      "day": 34,
+      "w": "elucidation"
+    },
+    {
+      "day": 34,
+      "w": "enunciate"
+    },
+    {
+      "day": 34,
+      "w": "unconcealed"
+    },
+    {
+      "day": 34,
+      "w": "patency"
+    },
+    {
+      "day": 34,
+      "w": "unbosom"
+    },
+    {
+      "day": 34,
+      "w": "openheartedness"
+    },
+    {
+      "day": 34,
+      "w": "outspokenness"
+    },
+    {
+      "day": 35,
+      "w": "fastuous"
+    },
+    {
+      "day": 35,
+      "w": "supercilial"
+    },
+    {
+      "day": 35,
+      "w": "morgue"
+    },
+    {
+      "day": 36,
+      "w": "pudency"
+    },
+    {
+      "day": 36,
+      "w": "verecund"
+    },
+    {
+      "day": 36,
+      "w": "self-abasement"
+    },
+    {
+      "day": 36,
+      "w": "lowly"
+    },
+    {
+      "day": 36,
+      "w": "unboastful"
+    },
+    {
+      "day": 36,
+      "w": "abjectness"
+    },
+    {
+      "day": 36,
+      "w": "obsequiousness"
+    },
+    {
+      "day": 36,
+      "w": "self-deprecation"
+    },
+    {
+      "day": 37,
+      "w": "contentiousness"
+    },
+    {
+      "day": 37,
+      "w": "fractiousness"
+    },
+    {
+      "day": 37,
+      "w": "disputatiousness"
+    },
+    {
+      "day": 37,
+      "w": "feuding"
+    },
+    {
+      "day": 37,
+      "w": "scuffle"
+    },
+    {
+      "day": 37,
+      "w": "donnybrook"
+    },
+    {
+      "day": 37,
+      "w": "embroilment"
+    },
+    {
+      "day": 37,
+      "w": "wrangling"
+    },
+    {
+      "day": 37,
+      "w": "bickering"
+    },
+    {
+      "day": 37,
+      "w": "internecineness"
+    },
+    {
+      "day": 37,
+      "w": "agon"
+    },
+    {
+      "day": 37,
+      "w": "broil"
+    },
+    {
+      "day": 37,
+      "w": "tussle"
+    },
+    {
+      "day": 37,
+      "w": "affray"
+    },
+    {
+      "day": 37,
+      "w": "embattlement"
+    },
+    {
+      "day": 37,
+      "w": "logomachy"
+    },
+    {
+      "day": 37,
+      "w": "frondeur"
+    },
+    {
+      "day": 37,
+      "w": "seditious"
+    },
+    {
+      "day": 37,
+      "w": "factional"
+    },
+    {
+      "day": 37,
+      "w": "scrappy"
+    },
+    {
+      "day": 37,
+      "w": "altercative"
+    },
+    {
+      "day": 37,
+      "w": "fisticuffs"
+    },
+    {
+      "day": 37,
+      "w": "obstreperousness"
+    },
+    {
+      "day": 38,
+      "w": "pacificatory"
+    },
+    {
+      "day": 38,
+      "w": "tranquillity"
+    },
+    {
+      "day": 38,
+      "w": "quietism"
+    },
+    {
+      "day": 38,
+      "w": "restfulness"
+    },
+    {
+      "day": 38,
+      "w": "composedness"
+    },
+    {
+      "day": 38,
+      "w": "propitiable"
+    },
+    {
+      "day": 38,
+      "w": "irenicist"
+    },
+    {
+      "day": 38,
+      "w": "peaceableness"
+    },
+    {
+      "day": 38,
+      "w": "gentleness"
+    },
+    {
+      "day": 38,
+      "w": "lenity"
+    },
+    {
+      "day": 38,
+      "w": "mildness"
+    },
+    {
+      "day": 38,
+      "w": "appeasable"
+    },
+    {
+      "day": 38,
+      "w": "amicableness"
+    },
+    {
+      "day": 38,
+      "w": "reconcilement"
+    },
+    {
+      "day": 38,
+      "w": "pacationism"
+    },
+    {
+      "day": 38,
+      "w": "mansuetude"
+    },
+    {
+      "day": 38,
+      "w": "unruffledness"
+    },
+    {
+      "day": 38,
+      "w": "amiableness"
+    },
+    {
+      "day": 38,
+      "w": "irenicism"
+    },
+    {
+      "day": 38,
+      "w": "peaceable"
+    },
+    {
+      "day": 38,
+      "w": "quiescence"
+    },
+    {
+      "day": 38,
+      "w": "temperateness"
+    },
+    {
+      "day": 38,
+      "w": "cordiality"
+    },
+    {
+      "day": 38,
+      "w": "peacemaking"
+    },
+    {
+      "day": 40,
+      "w": "consuetude"
+    },
+    {
+      "day": 40,
+      "w": "traditionalism"
+    },
+    {
+      "day": 40,
+      "w": "conventionality"
+    },
+    {
+      "day": 40,
+      "w": "praxis"
+    },
+    {
+      "day": 40,
+      "w": "stereotypy"
+    },
+    {
+      "day": 40,
+      "w": "ritualism"
+    }
+  ],
+  "assertions": {
+    "all_days_50": true,
+    "total_2000": true,
+    "unique_2000": true,
+    "zero_duplicates": true,
+    "zero_empty_fields": true,
+    "days_1_2_unchanged": true
+  }
+}

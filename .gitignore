@@ -1,0 +1,8 @@
+node_modules/
+.omc/
+.verify/
+.playwright-mcp/
+data/_candidates/
+/tmp
+.DS_Store
+*.log
