@@ -77,7 +77,7 @@
       if (!first) doc.addPage();
       first = false;
       doc.setFont("helvetica", "bold"); doc.setFontSize(14);
-      doc.text("SAT 2000 — Day " + pad2(d.day) + " · " + d.theme + "  (" + d.theme_ko + ")", 40, 40);
+      doc.text("SAT 2000: Day " + pad2(d.day) + " · " + d.theme + "  (" + d.theme_ko + ")", 40, 40);
       if (typeof doc.autoTable === "function") {
         doc.autoTable({
           head: [COLS],
@@ -101,7 +101,7 @@
         var y = 70; doc.setFontSize(9); doc.setFont("courier", "normal");
         d.words.forEach(function (w) {
           if (y > 540) { doc.addPage(); y = 50; }
-          doc.text((w.w + " (" + w.pos + ") " + w.ipa + " — " + w.en + " / " + w.ko).slice(0, 120), 40, y); y += 14;
+          doc.text((w.w + " (" + w.pos + ") " + w.ipa + " · " + w.en + " / " + w.ko).slice(0, 120), 40, y); y += 14;
         });
       }
     });

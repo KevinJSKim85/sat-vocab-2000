@@ -132,7 +132,7 @@
     function drawResults() {
       var score = scoreOf();
       var pct = Math.round((score / questions.length) * 100);
-      var name = S.getStudentName() || "—";
+      var name = S.getStudentName() || "(no name)";
 
       root.innerHTML = "";
       root.appendChild(el("div", { class: "study-header" }, [
@@ -189,9 +189,9 @@
       var name = S.getStudentName() || "_______________";
 
       doc.setFont("helvetica", "bold"); doc.setFontSize(16);
-      doc.text("SAT 2000 — Vocabulary Quiz", marginX, y); y += 22;
+      doc.text("SAT 2000: Vocabulary Quiz", marginX, y); y += 22;
       doc.setFontSize(12); doc.setFont("helvetica", "normal");
-      doc.text("Day " + pad2(dayObj.day) + " — " + dayObj.theme, marginX, y); y += 16;
+      doc.text("Day " + pad2(dayObj.day) + " · " + dayObj.theme, marginX, y); y += 16;
       doc.text("Student: " + name, marginX, y); y += 16;
       doc.text("Date: " + S.todayStr(), marginX, y); y += 16;
       doc.setFont("helvetica", "bold");
