@@ -15,6 +15,51 @@
     var pos = 0;
     var submitted = false;
 
+    // --- History API wiring for phone/browser Back button ---------------------
+    // The quiz shows one question at a time; `pos` lives in memory. Without
+    // history entries, the phone/browser Back button pops the hash entry that
+    // brought us INTO the quiz, so the router exits to #/home and progress is
+    // lost. We instead push a same-hash history entry per question (state tells
+    // us which question), so Back/Forward step through questions; only Back from
+    // question 1 falls through to the router's hashchange and exits to #/home.
+    var navToken = "quiz#" + dayObj.day + "#" + Date.now(); // unique per entry
+    function quizState(p) { return { quizNav: navToken, pos: p }; }
+
+    function onPopState(e) {
+      // Only react to OUR quiz-nav states. A pop into a non-quiz / different
+      // navToken state means we've left the quiz (Back from Q1) — the browser
+      // also changed the hash, so the router's hashchange handles the exit.
+      var st = e.state;
+      if (!st || st.quizNav !== navToken) return;
+      if (submitted) return; // on results screen; let router/hash drive nav
+      if (typeof st.pos === "number" && st.pos >= 0 && st.pos < questions.length) {
+        skipWarning = false;
+        pos = st.pos;       // restore question index from history (no rebuild)
+        drawQuestion();     // answers[] is preserved across back/forward
+      }
+    }
+
+    // Tear down the popstate listener the moment we navigate to another route,
+    // so it never leaks across routes or stacks up over multiple quiz entries.
+    function onHashChangeCleanup() {
+      window.removeEventListener("popstate", onPopState);
+      window.removeEventListener("hashchange", onHashChangeCleanup);
+    }
+
+    window.addEventListener("popstate", onPopState);
+    window.addEventListener("hashchange", onHashChangeCleanup);
+    // Tag the current history entry as question 0 (same hash, just adds state).
+    history.replaceState(quizState(0), "", location.hash || "#/quiz/" + dayObj.day);
+
+    function goToQuestion(next) {
+      // Forward navigation creates a new history entry (same hash) so the
+      // phone/browser Forward button can re-advance and Back can return.
+      if (next > pos) history.pushState(quizState(next), "", location.hash);
+      skipWarning = false;
+      pos = next;
+      drawQuestion();
+    }
+
     root.innerHTML = "";
     var header = el("div", { class: "study-header" }, [
       el("a", { class: "back-chevron", href: "#/home", "aria-label": "Back to home" }, ["←"]),
@@ -76,7 +121,9 @@
       var nav = el("div", { class: "quiz-nav" });
       nav.appendChild(el("button", {
         class: "btn", type: "button", disabled: pos === 0 ? "disabled" : false,
-        onclick: function () { if (pos > 0) { skipWarning = false; pos--; drawQuestion(); } }
+        // Drive history so the in-app Prev and the phone/browser Back button
+        // behave identically (onPopState restores the previous question).
+        onclick: function () { if (pos > 0) history.back(); }
       }, ["← Prev"]));
 
       if (pos < questions.length - 1) {
@@ -84,7 +131,7 @@
           class: "btn", type: "button",
           onclick: function () {
             if (answers[pos] === null) { skipWarning = true; drawQuestion(); return; }
-            skipWarning = false; pos++; drawQuestion();
+            goToQuestion(pos + 1);
           }
         }, ["Next →"]));
       } else {
