@@ -101,7 +101,7 @@
       if (skipWarning) {
         body.appendChild(el("p", {
           class: "quiz-skip-warn",
-          text: "Please choose an answer — you can’t skip a question."
+          text: "Please choose an answer. You can’t skip a question."
         }));
       }
 
