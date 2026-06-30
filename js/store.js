@@ -105,6 +105,64 @@
     return d.getFullYear() + "-" + mm + "-" + dd;
   }
 
+  // True iOS Safari ignores the <a download> attribute, and Korean in-app
+  // webviews (KakaoTalk / Naver / Instagram / Line / Daum / Facebook) either
+  // block the anchor download or save the blob with no/wrong extension, so the
+  // student ends up with a file that "is not a PDF / won't open". On those
+  // platforms we open the blob URL in the system viewer instead, where the user
+  // can Save/Share a proper file.
+  function isIOS() {
+    var ua = navigator.userAgent || "";
+    if (/iP(hone|ad|od)/i.test(ua)) return true;
+    // iPadOS 13+ reports as desktop Mac but exposes touch points.
+    return navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+  }
+  function isInAppWebView() {
+    var ua = navigator.userAgent || "";
+    return /KAKAOTALK|NAVER|Instagram|FBAN|FBAV|Line|DaumApps/i.test(ua);
+  }
+  function downloadHostile() { return isIOS() || isInAppWebView(); }
+
+  // Deliver a Blob as a download. Desktop / standard browsers get the usual
+  // <a download> click; iOS and in-app webviews get the blob opened in a new
+  // tab so the native viewer can render it and the user can save it. Always
+  // wrapped so a blocked path surfaces a toast instead of failing silently.
+  function downloadBlob(blob, filename) {
+    try {
+      var url = URL.createObjectURL(blob);
+      var revoke = function () {
+        setTimeout(function () {
+          try { URL.revokeObjectURL(url); } catch (e) { /* noop */ }
+        }, 60000);
+      };
+
+      if (downloadHostile()) {
+        var w = window.open(url, "_blank");
+        if (!w) {
+          // Popup blocked: navigate the current tab to the blob instead.
+          window.location.href = url;
+        }
+        toast("Opened " + filename + ". Tap Share to save it.");
+        revoke();
+        return true;
+      }
+
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      a.rel = "noopener";
+      a.style.display = "none";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      revoke();
+      return true;
+    } catch (e) {
+      toast("Download failed: " + (e && e.message ? e.message : "unknown error"));
+      return false;
+    }
+  }
+
   window.Store = {
     getProgress: getProgress,
     setWordStatus: setWordStatus,
@@ -116,6 +174,7 @@
     getDay: getDay,
     speak: speak,
     toast: toast,
-    todayStr: todayStr
+    todayStr: todayStr,
+    downloadBlob: downloadBlob
   };
 })();

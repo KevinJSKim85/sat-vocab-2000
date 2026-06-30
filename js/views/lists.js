@@ -109,7 +109,7 @@
         });
       }
     });
-    doc.save(filenameBase + ".pdf");
+    S.downloadBlob(doc.output("blob"), filenameBase + ".pdf");
   }
 
   function exportXLSX(daysArr, filenameBase) {
@@ -122,7 +122,9 @@
       ws["!cols"] = [{ wch: 16 }, { wch: 6 }, { wch: 22 }, { wch: 34 }, { wch: 16 }, { wch: 60 }];
       XLSX.utils.book_append_sheet(wb, ws, "Day " + pad2(d.day));
     });
-    XLSX.writeFile(wb, filenameBase + ".xlsx");
+    var out = XLSX.write(wb, { bookType: "xlsx", type: "array" });
+    var xlsxType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+    S.downloadBlob(new Blob([out], { type: xlsxType }), filenameBase + ".xlsx");
   }
 
   window.Views = window.Views || {};

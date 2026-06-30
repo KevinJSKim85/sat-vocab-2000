@@ -222,7 +222,8 @@
         y += 8;
       });
 
-      doc.save("SAT2000_Day" + pad2(dayObj.day) + "_Quiz_" + (name.replace(/[^a-z0-9]+/gi, "_") || "student") + ".pdf");
+      var quizFile = "SAT2000_Day" + pad2(dayObj.day) + "_Quiz_" + (name.replace(/[^a-z0-9]+/gi, "_") || "student") + ".pdf";
+      S.downloadBlob(doc.output("blob"), quizFile);
     }
 
     drawQuestion();
