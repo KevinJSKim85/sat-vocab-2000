@@ -78,6 +78,10 @@
       first = false;
       doc.setFont("helvetica", "bold"); doc.setFontSize(14);
       doc.text("SAT 2000: Day " + pad2(d.day) + " · " + d.theme + "  (" + d.theme_ko + ")", 40, 40);
+      var dateStr = (typeof S !== "undefined" && S.todayStr) ? S.todayStr() : (function(){ var d = new Date(); return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0"); })();
+      doc.setFont("helvetica", "normal"); doc.setFontSize(9); doc.setTextColor(150, 150, 150);
+      doc.text("Printed: " + dateStr, 40, 52);
+      doc.setTextColor(0, 0, 0);
       if (typeof doc.autoTable === "function") {
         doc.autoTable({
           head: [COLS],

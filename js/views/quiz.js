@@ -193,7 +193,7 @@
       doc.setFontSize(12); doc.setFont("helvetica", "normal");
       doc.text("Day " + pad2(dayObj.day) + " · " + dayObj.theme, marginX, y); y += 16;
       doc.text("Student: " + name, marginX, y); y += 16;
-      doc.text("Date: " + S.todayStr(), marginX, y); y += 16;
+      doc.text("Printed: " + S.todayStr(), marginX, y); y += 16;
       doc.setFont("helvetica", "bold");
       doc.text("Score: " + score + " / " + questions.length, marginX, y); y += 10;
       doc.setDrawColor(210); doc.line(marginX, y, doc.internal.pageSize.getWidth() - marginX, y); y += 20;

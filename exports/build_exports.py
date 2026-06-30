@@ -94,6 +94,7 @@ def build_xlsx(days, path):
 
 
 def build_pdf(days, path):
+    from datetime import date
     from reportlab.lib import colors
     from reportlab.lib.pagesizes import A4, landscape
     from reportlab.lib.units import mm
@@ -108,6 +109,9 @@ def build_pdf(days, path):
     head_style = ParagraphStyle("head", parent=styles["Heading2"],
                                 fontSize=13, spaceAfter=6,
                                 textColor=colors.HexColor("#111111"))
+    printed_style = ParagraphStyle("printed", parent=styles["BodyText"],
+                                   fontSize=9, textColor=colors.HexColor("#969696"),
+                                   spaceAfter=8)
     accent = colors.HexColor("#" + ACCENT)
 
     doc = SimpleDocTemplate(
@@ -117,6 +121,9 @@ def build_pdf(days, path):
         title="SAT 2000 — All 2000 Words")
     story = []
     col_w = [70, 32, 95, 150, 78, 290]  # points; sums under landscape A4 usable width
+
+    # Cover printed date — inserted once before all day sections
+    story.append(Paragraph("Printed: " + date.today().isoformat(), printed_style))
 
     for di, d in enumerate(days):
         story.append(Paragraph(
